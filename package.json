@@ -42,7 +42,8 @@
     "prepare": "husky install",
     "prerelease": "scripts/ensure-clean.sh && pnpm build && pnpm docgen && git add README.md",
     "release.preview": "commit-and-tag-version --dry-run",
-    "release": "commit-and-tag-version --commit-all && git push --follow-tags && pnpm publish"
+    "release": "commit-and-tag-version --commit-all && git push --follow-tags && pnpm publish",
+    "test": "cd android"
   },
   "commit-and-tag-version": {
     "scripts": {
@@ -79,7 +80,7 @@
     "@aparajita/eslint-config-base": "^1.1.5",
     "@aparajita/prettier-config": "^1.0.0",
     "@aparajita/swiftly": "^1.0.4",
-    "@capacitor/cli": "^4.3.0",
+    "@capacitor/cli": "^5.0.0",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@ionic/swiftlint-config": "^1.1.2",
@@ -96,7 +97,7 @@
     "eslint-plugin-n": "^15.3.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.1",
-    "husky": "^8.0.1",
+    "husky": "^6.0.0",
     "nodemon": "^2.0.20",
     "prettier": "^2.7.1",
     "prettier-plugin-java": "^1.6.2",
@@ -106,10 +107,10 @@
     "typescript": "~4.8.4"
   },
   "dependencies": {
-    "@aparajita/capacitor-logger": "latest",
-    "@capacitor/android": "^4.3.0",
-    "@capacitor/app": "^4.0.1",
-    "@capacitor/core": "^4.3.0",
-    "@capacitor/ios": "^4.3.0"
+    "@aparajita/capacitor-logger": "git@github.com:courierexpert/capacitor-logger",
+    "@capacitor/android": "^5.0.0",
+    "@capacitor/app": "^5.0.1",
+    "@capacitor/core": "^5.0.0",
+    "@capacitor/ios": "^5.0.0"
   }
 }
