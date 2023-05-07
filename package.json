@@ -108,7 +108,7 @@
     "typescript": "~4.8.4"
   },
   "dependencies": {
-    "@aparajita/capacitor-logger": "git+https://github.com/courierexpert/capacitor-logger",
+    "@aparajita/capacitor-logger": "https://github.com/courierexpert/capacitor-logger.git",
     "@capacitor/android": "^5.0.1",
     "@capacitor/app": "^5.0.1",
     "@capacitor/core": "^5.0.1",
