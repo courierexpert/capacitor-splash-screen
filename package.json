@@ -43,7 +43,7 @@
     "release.preview": "commit-and-tag-version --dry-run",
     "release": "commit-and-tag-version --commit-all && git push --follow-tags && pnpm publish",
     "test": "cd android",
-    "prepare": "husky install"
+    "prepare": "cd ../../ && husky install"
   },
   "commit-and-tag-version": {
     "scripts": {
@@ -69,7 +69,7 @@
   "swiftlint": "@ionic/swiftlint-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aparajita/capacitor-splash-screen.git"
+    "url": "https://github.com/courierexpert/capacitor-splash-screen.git"
   },
   "bugs": {
     "url": "https://github.com/aparajita/capacitor-splash-screen/issues"
