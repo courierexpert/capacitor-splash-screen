@@ -43,7 +43,7 @@
     "release.preview": "commit-and-tag-version --dry-run",
     "release": "commit-and-tag-version --commit-all && git push --follow-tags && pnpm publish",
     "test": "cd android",
-    "prepare": "cd ../../ && husky install"
+    "prepare": "cd android",
   },
   "commit-and-tag-version": {
     "scripts": {
